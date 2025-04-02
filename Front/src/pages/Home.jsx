@@ -104,8 +104,8 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h2>Selecione o Paicente</h2>
       <img src="/medic.png" alt="Médico" className="home-image" />
+      <h2>Selecione o Paicente</h2>
 
       <div className="search-paciente">
         <h3>Buscar Paciente</h3>

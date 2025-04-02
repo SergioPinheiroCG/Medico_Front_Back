@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
-  background-color: #c0daf8; /* Cor de fundo para visualização */
+  background-color: #e9edf1; /* Cor de fundo para visualização */
   font-family: Arial, sans-serif; /* Define uma fonte padrão */
 }
 

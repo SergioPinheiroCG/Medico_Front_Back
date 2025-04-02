@@ -121,10 +121,9 @@ function CadastroPaciente() {
 
       <div className="botoes-cadastro">
         <button onClick={cadastrarPaciente}>Cadastrar Paciente</button>
-        
+        <button onClick={() => navigate('/home')} className="voltar-button">Voltar</button>
       </div>
-      <button onClick={() => navigate('/home')} className="voltar-button">Voltar</button>
-    </div>
+          </div>
   );
 }
 
