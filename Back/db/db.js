@@ -1,7 +1,5 @@
 import mongoose from 'mongoose';
-
-const server = 'localhost:27017';
-const database = 'medic';
+import 'dotenv/config';
 
 class Database {
   constructor() {
@@ -10,19 +8,13 @@ class Database {
 
   async _connect() {
     try {
-      await mongoose.connect(`mongodb://${server}/${database}`);
-
-      console.log('Database connection successful');
-      console.log('Conectado ao banco:', mongoose.connection.name);
-
-      const collections = await mongoose.connection.db.listCollections().toArray();
-      console.log('Collections disponíveis:', collections.map(col => col.name));
-
+      await mongoose.connect(process.env.MONGODB_URI);
+      console.log('✅ Conectado ao MongoDB Atlas!');
     } catch (err) {
-      console.error('Database connection error:', err);
+      console.error('❌ Falha na conexão:', err.message);
+      process.exit(1);
     }
   }
 }
 
 export default new Database();
-
