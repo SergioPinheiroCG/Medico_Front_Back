@@ -145,9 +145,14 @@ dbURI=mongodb+srv://usuario:senha@cluster.mongodb.net/meubanco
 
 4️⃣ **Inicie o servidor**
 ```bash
+..\Backend
 node index.js
 ```
 
-
+4️⃣ **Inicie o Front**
+```bash
+..\Frontend
+npm run dev
+```
 🔥 **Desenvolvido por [Alexsandra Batista de Luna, Bruna Rafaela de Menezes Paulino, Gustavo Tomio Magalhaes Kubo,Sérgio Magno Castor Pinheiro, Thiago Limeira de Alencar]** 🔥
 
